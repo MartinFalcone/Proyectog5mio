@@ -19,4 +19,6 @@ from ProyectoG5.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name = 'index'),
+    path("list_providers/", include("providers.urls"))
+
 ]

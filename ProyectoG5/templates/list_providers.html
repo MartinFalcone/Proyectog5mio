@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+    <h1>Estos son los proveedores</h1>
+
+    {% for provider in list_providers %}
+        <h2>{{provider.name}}<h2>
+            <p>Mail de contacto {{provider.contact}}</p>
+            <p>Numero de contacto {{provider.contact_number}}</p>
+            <p style="color:red">Realizar proxima compra {{provider.next_purchase}}</p>
+    
+            
+    {% endfor %}
+
+{% endblock %}
